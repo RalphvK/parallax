@@ -1,0 +1,11 @@
+RIGHTS
+
+You are allowed, free of charge, to use, copy and modify this software for both non-commercial and commercial use. You are allowed to publish, distribute, sub-license or sell derivative works of this product.
+
+LIMITATIONS
+
+You are not allowed to sell unmodified versions of this software as a standalone product. You must either use this code as part of other sofware or create derivative software in order to be allowed to sell the software.
+
+NO WARRANTY
+
+This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software. 

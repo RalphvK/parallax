@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+	<div id="fold">
+		<div id="social"><i class="fa fa-facebook-square" aria-hidden="true"></i>	<i class="fa fa-twitter-square" aria-hidden="true"></i> <i class="fa fa-reddit-square" aria-hidden="true"></i></div>
+		<div id="title">#parallax</div>
+	</div>
+	<div id="contentwrapper">
+		<div id="leftcolumn">
+			<div id="welcomepitch" class="articleelement">
+				<h1>Simple Scrolling Effects</h1>
+				<p>This Jquery plug-in creates a function which allows you to set scrolling speeds of background images and even complete elements, as well as fading elements while scrolling up and down the page. The plug-in is very easy to use, very light and very basic. This allows it to be very easily modified and adapted to suit your needs. If you are a developer, modding this plug-in will be a breeze. The .paralax() function can be applied to any element's background image, or an entire element with position: fixed. For more on information on how to use the plug-in, please read the <a href="#">documentation</a>.</p>
+			</div>
+			<div id="performancepitch" class="articleelement">
+				<h1>1KB</h1>
+				<p>#PARALLAX is small. Extremely Small. It is no more than 1 kilobyte when minified. This is, in fact, so small that you might be interested in embedding this code in your document to save you a valuable http-request. Being feather light, it is very accessible. Regardless of whether you are loading those 1009 bytes on your planet-destroying gaming PC or on your iPod, it will have minimal impact on your loading time.</p>
+			</div>
+			<div id="performancepitch" class="articleelement">
+				<h1>For Free, with Freedom</h1>
+				<p>This plug-in is completely free for personal and commercial use. Attribution is not required, but highly appreciated. Attribution can be something as simple as a comment in your code or a quick Tweet. And remember: every time the userbase grows, the plug-in grows too. Still, you are completely free to use this plug-in however you want with or without attribution, the only exception being selling this plug-in alone without modification. For a more elaborate explanation of <i>"selling this plug-in alone without modification"</i> or if really would like to sell it, please read the <a href="#licensetitle">license</a>.</p>
+			</div>
+		</div><div id="rightcolumn">
+			<ul>
+				<a href="#fold"><li class="active">Home</li></a>
+				<a href="#documentationtitle"><li>Documentation</li></a>
+				<a href="#fftitle"><li>Future Features</li></a>
+				<a href="#licensetitle"><li>License & Contact</li></a>
+			</ul>
+			<div id="download">
+				<div class="top">DOWNLOAD <i class="fa fa-cloud-download" aria-hidden="true"></i></div>		
+				<a href="download/parallax-min.zip"><div class="bottom"><strong>parallax.jquery.min.js</strong></div></a>
+				<a href="download/parallax.zip"><div class="bottom">parallax.jquery.js</div></a>
+				<a href="download/parallax-full.zip"><div class="bottom">parallax-full.zip</div></a>
+			</div>
+			<div id="author">
+				<div class="top">AUTHOR</div>
+				<a href="https://github.com/RalphvK"><div class="bottom"><strong>Ralph van Kruiselbergen</strong><br>Check my Github <i class="fa fa-github" aria-hidden="true"></i></div></a>
+			</div>
+		</div>
+	</div>
+	<div class="intermezo" style="background-image: url('img/subway-compressed.jpg')">
+		<div class="intertitle" id="documentationtitle">Documentation</div>
+	</div>
+	<div class="standardcontentwrapper">
+		<div class="articleelement">
+			<h2>Basic Code Snippet</h2>
+			<p>This is basic code that is the start of every function of this plug-in. This uses the default settings.</p>
+			<p class="code">$( <span class="string">'#element'</span> ).parallax();</p>
+		</div>
+		<div class="articleelement">
+			<h2>Settings</h2>
+			<p>There are a number of options for this plug-in. Here is a snippet with all the variables.</p>
+			<p class="code">$( <span class="string">'#element'</span> ).parallax( {<br>
+				<span class="codetab options">target: <span class="string">"background"</span>,</span><br>
+				<span class="codetab options">factor: <span class="int">0.4</span>,</span><br>
+				<span class="codetab options">transition: <span class="string">"none"</span>, <span class="comment">// only available when target is set to "element".</span></span><br>
+				<span class="codetab options">transitionfactor: <span class="int">0.5</span></span><br>
+			} );</p>
+			<p>Here is a complete list with all the options:</p>
+			<table id="options">
+				<tr class="group">
+					<td class="argument">target</td>
+					<td class="value">background</td>
+					<td class="explanation">Makes the plug-in target the background-image of the element.</td>
+				</tr>
+				<tr class="group">
+					<td class="argument"></td>
+					<td class="value">element</td>
+					<td class="explanation">Target the element itself. CSS position must be absolute.</td>
+				</tr>
+				<tr>
+					<td class="argument">factor</td>
+					<td class="value">[number 0 - 1]</td>
+					<td class="explanation">A number from 0 to 1 defines the speed of the parallax effect.</td>
+				</tr>
+				<tr class="group">
+					<td class="argument">transition</td>
+					<td class="value">none</td>
+					<td class="explanation">Defines no transition.</td>
+				</tr>
+				<tr class="group">
+					<td class="argument"></td>
+					<td class="value">fade</td>
+					<td class="explanation">Makes the element fade out or in, based on the scroll position.</td>
+				</tr>
+				<tr>
+					<td class="argument">transitionfactor</td>
+					<td class="value">[number 0 - 1]</td>
+					<td class="explanation">A number from 0 to 1 defines the speed of the transition.</td>
+				</tr>
+			</table>
+		</div>
+		<div class="articleelement">
+			<h2>Browser Support</h2>
+			<p>All modern browsers supporting the css background-position property and the Jquery .scroll() event should be compatible with this plug-in. Unfortunately for us web developers, older versions of Internet Explorer do not.<br>Most mobile browsers will lock the DOM while scrolling, the only exception to that rule being IE on Windows Phone 8. However, you shall not worry! Because this plug-in disables itself on browsers which are known to be incompatible.</p>
+		</div>
+	</div>
+	<div class="intermezo" style="background-image: url('img/fallsblur-compressed.jpg')">
+		<div class="intertitle" id="fftitle">Future Features</div>
+	</div>
+	<div class="standardcontentwrapper">
+		<div class="articleelement">
+			<h2>Multiple Background Images</h2>
+			<p>To make this plug-in even more powerful, we need to implement support for multiple background images. Multiple background images in CSS should be able to have different factors. That way, you could very easily create realistic parallax backgrounds.</p>
+		</div>
+		<div class="articleelement">
+			<h2>Additional Transitions</h2>
+			<p>Currently, it is possible to apply a fading transition to elements. In the future there is a need for more transitions. Examples include: scaling, letterspacing (with fading) and blur (using offset text-shadows).</p>
+		</div>
+	</div>
+	<div class="intermezo" style="background-image: url('img/locks-compressed.jpg')">
+		<div class="intertitle" id="licensetitle">License</div>
+	</div>
+	<div class="standardcontentwrapper">
+		<div class="articleelement">
+			<h2>License</h2>
+			<p>
+				<h4>Rights</h4>
+				You are allowed, free of charge, to use, copy and modify this software for both non-commercial and commercial use. You are allowed to publish, distribute, sub-license or sell derivative works of this product.
+			</p>
+			<p>
+				<h4>Limitations</h4>
+				You are not allowed to sell unmodified versions of this software as a standalone product. You must either use this code as part of other sofware or create derivative software in order to be allowed to sell the software.
+			</p>
+			<p>
+				<h4>No Warranty</h4>
+				This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+			</p>
+			<p style="color: #828282">END OF LICENSE</p>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.js"></script>
+	<script src="js/parallax.jquery.min.js"></script>
+
+	<script>
+	    window.onload = function() {
+
+	    	// Acquiring height information
+	    	var wndwheight = $(window).height();
+	    	var titleheight = $('#title').height();
+
+	    	// Calculating title maring
+	    	var titlemargin = (wndwheight - titleheight) / 2;
+
+	    	// Applying margins
+	    	$('#title').css({'top': titlemargin});
+	    	$('#fold').css({'height': wndwheight});
+
+	    	// Paralax
+            $('#title').parallax({target: "element", factor : 0.4, transition: "fade"});
+            $('#social').parallax({target: "element", factor : 0.7, transition: "fade"});
+            $('#fold').parallax({target: "background", factor : 0.5});
+            $(".intermezo").each(function () {
+            $(this).parallax({target: "background", factor : 0.4});
+            });
+
+	    };
+	</script>
+</body>
+</html>
