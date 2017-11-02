@@ -16,18 +16,22 @@ This Jquery plug-in creates a function which allows you to set scrolling speeds 
 
 This is the basic code that is the start of every function of this plug-in. This uses the default settings.
 
-    $('#element').parallax();
+```javascript
+$('#element').parallax();
+```
 
 ## Settings
 
 There are a number of options for this plug-in. Here is a snippet with all the variables.
 
-    $('#element').parallax( {
-        target: 'background',
-        factor: 0.4,
-        transition: 'none', // only available when target is set to 'element'.
-        transitionfactor: 0.5
-    } );
+```javascript
+$('#element').parallax( {
+    target: 'background',
+    factor: 0.4,
+    transition: 'none', // only available when target is set to 'element'.
+    transitionfactor: 0.5
+} );
+```
 
 Here is a complete list with all the options:
 
